@@ -1,0 +1,2274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Mohd Owais Irshad - Graphic Designer, Data Entry Operator, Computer Operator and Web Designer">
+
+<title>Mohd Owais Irshad | Resume & Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+:root {
+    --bg: #080b12;
+    --card: #111724;
+    --card2: #1c2638;
+    --text: #f5f7fb;
+    --muted: #a7b0c1;
+    --line: rgba(255,255,255,.12);
+    --lime: #caff4a;
+    --purple: #9d83ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background:
+        radial-gradient(circle at 90% 0%, #292044 0, transparent 28%),
+        radial-gradient(circle at 0% 40%, #142d29 0, transparent 24%),
+        var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-x: hidden;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1160px, calc(100% - 36px));
+    margin: auto;
+}
+
+h1, h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+    font-size: clamp(2.2rem, 4.5vw, 4.2rem);
+    line-height: 1.05;
+    letter-spacing: -.06em;
+}
+
+.eyebrow {
+    color: var(--lime);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(8,11,18,.90);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -.05em;
+}
+
+.logo b {
+    color: var(--lime);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    color: var(--muted);
+    font-size: .85rem;
+}
+
+.nav-links a {
+    transition: .25s;
+}
+
+.nav-links a:hover {
+    color: var(--lime);
+}
+
+.nav-actions {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.icon-btn,
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--text);
+    border-radius: 50%;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 28px;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 12px 19px;
+    font-size: .84rem;
+    font-weight: 700;
+    transition: .25s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: var(--lime);
+    color: #080b12;
+    border-color: var(--lime);
+}
+
+.secondary {
+    background: transparent;
+    color: var(--text);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 82px 0 65px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.08fr .92fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 7vw, 6.3rem);
+    line-height: .96;
+    letter-spacing: -.08em;
+}
+
+.hero h1 span {
+    color: var(--lime);
+}
+
+.lead {
+    max-width: 650px;
+    color: var(--muted);
+    font-size: 1rem;
+    margin-top: 27px;
+}
+
+.lead strong {
+    color: var(--text);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.tag {
+    font-size: .72rem;
+    color: var(--muted);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 10px;
+}
+
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+.profile {
+    max-width: 390px;
+    margin: auto;
+    position: relative;
+}
+
+.profile:before {
+    content: "";
+    position: absolute;
+    inset: 22px -16px -16px 16px;
+    border: 1px solid #718d48;
+    border-radius: 28px;
+    transform: rotate(5deg);
+}
+
+.profile-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    background: linear-gradient(145deg, #303244, #111722);
+    box-shadow: 0 25px 80px #0008;
+}
+
+.profile-photo {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: center top;
+    background: linear-gradient(145deg, #343448, #10151f);
+}
+
+.profile-label {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    background: #080b12dd;
+    border: 1px solid #ffffff26;
+    border-radius: 16px;
+    padding: 13px 15px;
+    backdrop-filter: blur(14px);
+}
+
+.profile-label strong {
+    display: block;
+    font-size: .95rem;
+}
+
+.profile-label small {
+    color: #c0c6d3;
+    font-size: .73rem;
+}
+
+/* =========================
+   TICKER
+========================= */
+
+.ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    border-block: 1px solid var(--line);
+    padding: 16px 0;
+    color: var(--muted);
+    font: 500 .82rem "Space Grotesk", sans-serif;
+}
+
+.ticker span {
+    color: var(--lime);
+    padding: 0 22px;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+    margin-bottom: 38px;
+}
+
+.heading p {
+    max-width: 430px;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+/* =========================
+   SNAPSHOT
+========================= */
+
+.grid-four {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.mini {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 23px;
+}
+
+.mini .emoji {
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+}
+
+.mini h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.mini p {
+    color: var(--muted);
+    font-size: .82rem;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.two-columns {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 65px;
+}
+
+.about p {
+    color: var(--muted);
+    margin-bottom: 17px;
+}
+
+.about strong {
+    color: var(--text);
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.chip {
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 11px;
+    font-size: .76rem;
+    color: var(--muted);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.box {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.skill {
+    margin-bottom: 19px;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: .8rem;
+    margin-bottom: 8px;
+}
+
+.skill-top small {
+    color: var(--lime);
+}
+
+.bar {
+    height: 7px;
+    background: var(--card2);
+    border-radius: 99px;
+    overflow: hidden;
+}
+
+.bar i {
+    display: block;
+    width: var(--w);
+    height: 100%;
+    background: linear-gradient(90deg, var(--lime), #7edc55);
+    border-radius: 99px;
+}
+
+/* =========================
+   RESUME / TIMELINE
+========================= */
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.timeline {
+    border-left: 2px solid var(--line);
+    padding-left: 23px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 7px;
+    width: 11px;
+    height: 11px;
+    background: var(--lime);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px #caff4a12;
+}
+
+.timeline-item small {
+    color: var(--lime);
+    font-size: .72rem;
+}
+
+.timeline-item h3 {
+    font-size: 1rem;
+    margin: 5px 0 8px;
+}
+
+.timeline-item p {
+    color: var(--muted);
+    font-size: .84rem;
+    margin-bottom: 7px;
+}
+
+.timeline-item strong {
+    color: var(--text);
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.service {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 25px;
+    transition: .25s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    border-color: #caff4a66;
+}
+
+.service .number {
+    color: var(--lime);
+    font-size: .75rem;
+    font-weight: 700;
+}
+
+.service h3 {
+    font-size: 1.3rem;
+    margin: 36px 0 11px;
+}
+
+.service p {
+    color: var(--muted);
+    font-size: .84rem;
+}
+
+/* =========================
+   PORTFOLIO
+========================= */
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+.work {
+    grid-column: span 6;
+    min-height: 290px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 21px;
+    background: var(--card);
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    min-height: 290px;
+    object-fit: cover;
+    opacity: .75;
+    transition: .4s;
+}
+
+.work:hover img {
+    transform: scale(1.06);
+    opacity: .5;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px;
+    background: linear-gradient(transparent, #000e);
+}
+
+.overlay h3 {
+    font-size: 1.3rem;
+}
+
+.overlay p {
+    font-size: .82rem;
+    color: #d0d5df;
+    margin-top: 5px;
+}
+
+/* =========================
+   PROCESS
+========================= */
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.process {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 23px;
+}
+
+.process span {
+    font-size: .72rem;
+    color: var(--lime);
+    font-weight: 700;
+}
+
+.process h3 {
+    margin: 23px 0 10px;
+    font-size: 1.1rem;
+}
+
+.process p {
+    color: var(--muted);
+    font-size: .82rem;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 45px;
+    border: 1px solid #caff4a44;
+    border-radius: 26px;
+    background:
+        radial-gradient(circle at 90% 0, #35285c, transparent 42%),
+        #111724;
+}
+
+.contact-box p {
+    color: var(--muted);
+    max-width: 540px;
+    margin-top: 15px;
+}
+
+.contact-info {
+    display: grid;
+    gap: 8px;
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: .88rem;
+}
+
+.contact-info a:hover {
+    color: var(--lime);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    border-top: 1px solid var(--line);
+    padding: 27px 0;
+    color: var(--muted);
+    font-size: .8rem;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   LIGHT THEME
+========================= */
+
+body.light {
+    --bg: #f3f5f8;
+    --card: #ffffff;
+    --card2: #e7ebf2;
+    --text: #151923;
+    --muted: #5d6575;
+    --line: rgba(0,0,0,.12);
+}
+
+body.light .nav {
+    background: rgba(243,245,248,.92);
+}
+
+body.light .profile-label {
+    background: #ffffffdd;
+}
+
+body.light .profile-label small {
+    color: #444b5a;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .hero-grid,
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .profile {
+        max-width: 350px;
+    }
+
+    .grid-four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resume-grid,
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .container {
+        width: min(100% - 28px, 1160px);
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        padding: 23px;
+        background: var(--card);
+        border-bottom: 1px solid var(--line);
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 14vw, 5rem);
+    }
+
+    .heading {
+        display: block;
+    }
+
+    .heading p {
+        margin-top: 18px;
+    }
+
+    .grid-four,
+    .services,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work {
+        grid-column: span 12;
+        min-height: 250px;
+    }
+
+    .work img {
+        min-height: 250px;
+    }
+
+    .hero .btn {
+        width: 100%;
+    }
+
+    .contact-box {
+        padding: 30px 23px;
+    }
+
+}
+
+/* =========================
+   PRINT RESUME
+========================= */
+
+@media print {
+
+    body {
+        background: #fff !important;
+        color: #111 !important;
+    }
+
+    .nav,
+    .ticker,
+    .no-print,
+    footer {
+        display: none !important;
+    }
+
+    .section,
+    .hero {
+        padding: 25px 0;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .hero-grid,
+    .two-columns,
+    .skill-grid,
+    .resume-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .lead,
+    .about p,
+    .heading p,
+    .mini p,
+    .service p,
+    .process p,
+    .timeline-item p,
+    .contact-box p {
+        color: #444;
+    }
+
+    .profile:before {
+        display: none;
+    }
+
+    .profile-card {
+        box-shadow: none;
+    }
+
+    .profile-label {
+        background: #fff;
+        color: #111;
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .works {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .work {
+        grid-column: span 1;
+        min-height: 150px;
+    }
+
+    .work img {
+        min-height: 150px;
+    }
+
+    .section {
+        break-inside: avoid;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<header class="nav no-print">
+
+    <div class="container nav-inner">
+
+        <a class="logo" href="#home">
+            OWAIS<b>.</b>DESIGN
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#resume">Resume</a>
+            <a href="#services">Services</a>
+            <a href="#work">Portfolio</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-btn" id="themeBtn" title="Toggle theme">
+                ☼
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Computer Operator · Graphic Designer
+            </div>
+
+            <h1>
+                Mohd Owais<br>
+                <span>Irshad.</span>
+            </h1>
+
+            <p class="lead">
+
+                Dedicated <strong>Computer Operator & Graphic Designer</strong>
+                with practical experience in school administration,
+                data entry, document formatting, English typing and
+                visual design.
+
+                I work with CorelDRAW, Canva, MS Word, MS Excel,
+                PowerPoint and basic HTML/CSS web design.
+
+            </p>
+
+            <div class="btns">
+
+                <a class="btn primary" href="#work">
+                    View Portfolio ↗
+                </a>
+
+                <!-- <button class="btn secondary" onclick="printResume()">
+                    Download / Print Resume
+                </button> -->
+
+            </div>
+
+            <div class="tags">
+
+                <span class="tag">60+ WPM English Typing</span>
+                <span class="tag">CorelDRAW</span>
+                <span class="tag">Canva</span>
+                <span class="tag">MS Office</span>
+                <span class="tag">Data Entry</span>
+                <span class="tag">Web Design</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROFILE PHOTO -->
+
+        <div class="profile">
+
+            <div class="profile-card">
+
+                <img
+                    id="profileImage"
+                    class="profile-photo"
+                    alt="Mohd Owais Irshad Profile Photo"
+                    src="profile.png"
+                >
+
+                <div class="profile-label">
+
+                    <strong>Mohd Owais Irshad</strong>
+
+                    <small>
+                        Computer Operator & Graphic Designer
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TICKER -->
+
+<div class="ticker">
+
+    GRAPHIC DESIGN <span>✳</span>
+    DATA ENTRY <span>✳</span>
+    SCHOOL ADMINISTRATION <span>✳</span>
+    TYPING <span>✳</span>
+    WEB DESIGN <span>✳</span>
+    PRINTING
+
+</div>
+
+
+<!-- =========================
+     SNAPSHOT
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    Professional Snapshot
+                </div>
+
+                <h2>
+                    Creative skills.<br>
+                    Practical work.
+                </h2>
+
+            </div>
+
+            <p>
+                Computer-focused professional with practical experience
+                in school back-office operations, typing, documents
+                and graphic design.
+            </p>
+
+        </div>
+
+
+        <div class="grid-four">
+
+            <div class="mini">
+
+                <div class="emoji">🎨</div>
+
+                <h3>Graphic Design</h3>
+
+                <p>
+                    CorelDRAW, Canva, certificates,
+                    ID cards, banners and promotional
+                    materials.
+                </p>
+
+            </div>
+
+
+            <div class="mini">
+
+                <div class="emoji">⌨️</div>
+
+                <h3>Typing & Data</h3>
+
+                <p>
+                    60+ WPM English typing,
+                    record digitization and
+                    document preparation.
+                </p>
+
+            </div>
+
+
+            <div class="mini">
+
+                <div class="emoji">📊</div>
+
+                <h3>School Records</h3>
+
+                <p>
+                    Admissions, fee records,
+                    attendance data and
+                    document support.
+                </p>
+
+            </div>
+
+
+            <div class="mini">
+
+                <div class="emoji">💻</div>
+
+                <h3>Web Basics</h3>
+
+                <p>
+                    Basic HTML, CSS and
+                    JavaScript for responsive
+                    web pages.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section" id="about">
+
+    <div class="container two-columns">
+
+        <div>
+
+            <div class="eyebrow">
+                About Me
+            </div>
+
+            <h2>
+                Design mind.<br>
+                Organised work.
+            </h2>
+
+        </div>
+
+
+        <div class="about">
+
+            <p>
+
+                My name is <strong>Mohd Owais Irshad</strong>.
+                I am pursuing a Bachelor of Science in
+                Information Technology & Statistics at
+                Dayanand Anglo Vedic College, Kanpur.
+
+            </p>
+
+            <p>
+
+                I have practical experience in school
+                administration and back-office work.
+                My work includes student records,
+                fee and attendance data, document
+                formatting and school design materials.
+
+            </p>
+
+            <p>
+
+                I am interested in graphic design,
+                data entry, computer operator,
+                administrative and basic web-design
+                opportunities.
+
+                My focus is accurate typing,
+                clean formatting and professional
+                presentation.
+
+            </p>
+
+
+            <div class="chips">
+
+                <span class="chip">CorelDRAW</span>
+                <span class="chip">Canva</span>
+                <span class="chip">MS Word</span>
+                <span class="chip">MS Excel</span>
+                <span class="chip">PowerPoint</span>
+                <span class="chip">Windows</span>
+                <span class="chip">HTML/CSS</span>
+                <span class="chip">Basic JavaScript</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section class="section" id="skills">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    Skills
+                </div>
+
+                <h2>
+                    Tools I use<br>
+                    and explore.
+                </h2>
+
+            </div>
+
+            <p>
+                Skill levels are indicative working assessments,
+                not formal certification scores.
+            </p>
+
+        </div>
+
+
+        <div class="skill-grid">
+
+
+            <!-- DESIGN -->
+
+            <div class="box">
+
+                <h3>🎨 Design & Creative</h3>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>CorelDRAW</span>
+                        <small>Working</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:88%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Canva</span>
+                        <small>Working</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:85%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Adobe Photoshop</span>
+                        <small>Basic</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:35%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Illustrator / InDesign</span>
+                        <small>Basic Exposure</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:25%"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFFICE -->
+
+            <div class="box">
+
+                <h3>📊 Office & Data</h3>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>MS Word</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:90%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>MS Excel</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:75%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>MS PowerPoint</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:72%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>English Typing</span>
+                        <small>60+ WPM</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:90%"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEB -->
+
+            <div class="box">
+
+                <h3>🌐 Web & Computer</h3>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Windows & File Management</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:82%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>HTML</span>
+                        <small>Basic</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:65%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>CSS</span>
+                        <small>Basic</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:55%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>JavaScript</span>
+                        <small>Learning</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:30%"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ADMIN -->
+
+            <div class="box">
+
+                <h3>🗂️ Administration</h3>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Student Data Management</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:88%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Admission Processing</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:80%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Document Formatting</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:88%"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <div class="skill-top">
+                        <span>Front Desk Support</span>
+                        <small>Practical</small>
+                    </div>
+
+                    <div class="bar">
+                        <i style="--w:72%"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESUME
+========================= -->
+
+<section class="section" id="resume">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    Resume
+                </div>
+
+                <h2>
+                    Experience &<br>
+                    Education.
+                </h2>
+
+            </div>
+
+            <p>
+                Professional background and educational details.
+            </p>
+
+        </div>
+
+
+        <div class="resume-grid">
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="box">
+
+                <h3>💼 Work Experience</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <small>Present · 1+ Year</small>
+
+                        <h3>
+                            School Administrator &
+                            Back-Office Executive
+                        </h3>
+
+                        <p>
+                            <strong>Brilliant Oriental School</strong>
+                        </p>
+
+                        <p>
+                            • Maintain student admission registers,
+                            fee collection records and attendance
+                            data in MS Excel.
+                        </p>
+
+                        <p>
+                            • Format quarterly and annual exam
+                            papers, notices, circulars and
+                            administrative documents.
+                        </p>
+
+                        <p>
+                            • Design school identity-card templates,
+                            merit certificates, brochures and
+                            notice-board graphics.
+                        </p>
+
+                        <p>
+                            • Digitize manual records using
+                            English typing and support
+                            front-desk inquiries.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EDUCATION -->
+
+            <div class="box">
+
+                <h3>🎓 Education</h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <small>Pursuing</small>
+
+                        <h3>
+                            Bachelor of Science
+                        </h3>
+
+                        <p>
+                            Information Technology & Statistics
+                        </p>
+
+                        <p>
+                            Dayanand Anglo Vedic College,
+                            Kanpur
+                        </p>
+
+                    </div>
+
+
+                    <div class="timeline-item">
+
+                        <small>Completed in 2026</small>
+
+                        <h3>
+                            Intermediate — PCM
+                        </h3>
+
+                        <p>
+                            Physics, Chemistry and Mathematics
+                        </p>
+
+                        <p>
+                            Fatima Public School, Fatehpur
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <h3 style="margin-top:35px">
+                    🌍 Personal Details
+                </h3>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <p>
+                            <strong>Date of Birth:</strong>
+                            13 May 2008
+                        </p>
+
+                        <p>
+                            <strong>Languages:</strong>
+                            English, Hindi, Urdu
+                        </p>
+
+                        <p>
+                            <strong>Nationality:</strong>
+                            Indian
+                        </p>
+
+                        <p>
+                            <strong>Interests:</strong>
+                            Graphic design, reading books,
+                            digital art, coding, photography
+                            and learning new software.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section" id="services">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    Services
+                </div>
+
+                <h2>
+                    What I can<br>
+                    work on.
+                </h2>
+
+            </div>
+
+            <p>
+                Services aligned with my practical experience
+                and current skills.
+            </p>
+
+        </div>
+
+
+        <div class="services">
+
+
+            <div class="service">
+
+                <div class="number">
+                    01 / GRAPHICS
+                </div>
+
+                <h3>
+                    Graphic Design
+                </h3>
+
+                <p>
+                    School ID cards, certificates,
+                    banners, flyers, brochures,
+                    visiting cards, social-media posts
+                    and print layouts.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="number">
+                    02 / ADMIN
+                </div>
+
+                <h3>
+                    Data Entry & Office
+                </h3>
+
+                <p>
+                    English typing, student records,
+                    fee and attendance sheets,
+                    document formatting, notices
+                    and report preparation.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="number">
+                    03 / WEB
+                </div>
+
+                <h3>
+                    Basic Web Design
+                </h3>
+
+                <p>
+                    Simple responsive HTML/CSS
+                    websites, landing pages and
+                    basic JavaScript interactions.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
+
+<section class="section" id="work">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    Portfolio
+                </div>
+
+                <h2>
+                    Creative work<br>
+                    & Concepts.
+                </h2>
+
+            </div>
+
+            <p>
+                Reference visuals for design categories.
+                Replace them with your original work
+                when showcasing client projects.
+            </p>
+
+        </div>
+
+
+        <div class="works">
+
+
+            <div class="work">
+
+                <img
+                    src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1200&q=85"
+                    alt="Brand identity design"
+                    loading="lazy"
+                >
+
+                <div class="overlay">
+
+                    <h3>
+                        Brand Identity
+                    </h3>
+
+                    <p>
+                        Branding · Layout · Creative Direction
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="work">
+
+                <img
+                    src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1200&q=85"
+                    alt="Print design"
+                    loading="lazy"
+                >
+
+                <div class="overlay">
+
+                    <h3>
+                        Print Design
+                    </h3>
+
+                    <p>
+                        Visiting Cards · Stationery · Layout
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="work">
+
+                <img
+                    src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=85"
+                    alt="Graphic design"
+                    loading="lazy"
+                >
+
+                <div class="overlay">
+
+                    <h3>
+                        Graphic Creative
+                    </h3>
+
+                    <p>
+                        Typography · Composition · Posters
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="work">
+
+                <img
+                    src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1200&q=85"
+                    alt="Packaging design"
+                    loading="lazy"
+                >
+
+                <div class="overlay">
+
+                    <h3>
+                        Packaging Concept
+                    </h3>
+
+                    <p>
+                        Product Visuals · Food Packaging
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WORK PROCESS
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="heading">
+
+            <div>
+
+                <div class="eyebrow">
+                    Work Process
+                </div>
+
+                <h2>
+                    From idea<br>
+                    to delivery.
+                </h2>
+
+            </div>
+
+            <p>
+                A simple professional workflow for
+                client and office tasks.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+
+            <div class="process">
+
+                <span>01 / UNDERSTAND</span>
+
+                <h3>
+                    Understand
+                </h3>
+
+                <p>
+                    Understand requirements,
+                    purpose and expected output.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <span>02 / PLAN</span>
+
+                <h3>
+                    Plan
+                </h3>
+
+                <p>
+                    Choose layout, data structure,
+                    typography or document format.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <span>03 / CREATE</span>
+
+                <h3>
+                    Create
+                </h3>
+
+                <p>
+                    Prepare the design, document
+                    or computer-based work.
+                </p>
+
+            </div>
+
+
+            <div class="process">
+
+                <span>04 / REVIEW</span>
+
+                <h3>
+                    Review
+                </h3>
+
+                <p>
+                    Check spelling, alignment,
+                    accuracy and final details.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <div>
+
+                <div class="eyebrow">
+                    Get In Touch
+                </div>
+
+                <h2>
+                    Let's work<br>
+                    together.
+                </h2>
+
+                <p>
+                    For graphic design, school documents,
+                    data entry, typing, administrative support
+                    or basic website projects, feel free to contact me.
+                </p>
+
+
+                <div class="contact-info">
+
+                    <a href="mailto:mo.owaisirshad@gmail.com">
+                        ✉ mo.owaisirshad@gmail.com
+                    </a>
+
+                    <a href="tel:+916306833857">
+                        ☎ +91 6306833857
+                    </a>
+
+                    <span>
+                        📍 89/155 Bans Mandi, Kanpur, Uttar Pradesh <br>
+                        61 Qaziyana, Fatehpur, Uttar Pradesh
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="btns no-print">
+
+                <a
+                    class="btn primary"
+                    href="https://wa.me/916306833857"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    WhatsApp Me ↗
+                </a>
+
+                <!-- <button
+                    class="btn secondary"
+                    onclick="printResume()"
+                >
+                    Print Resume
+                </button> -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <span>
+            © <span id="year"></span>
+            Mohd Owais Irshad
+        </span>
+
+        <span>
+            Skills + Creativity + Accuracy
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const menuBtn = document.getElementById("menuBtn");
+
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function() {
+
+    navLinks.classList.toggle("open");
+
+});
+
+
+document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+        navLinks.classList.remove("open");
+
+    });
+
+});
+
+
+/* =========================
+   DARK / LIGHT THEME
+========================= */
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", function() {
+
+    document.body.classList.toggle("light");
+
+    const light = document.body.classList.contains("light");
+
+    themeBtn.textContent = light ? "☾" : "☼";
+
+});
+
+
+/* =========================
+   PRINT / SAVE AS PDF
+========================= */
+
+function printResume() {
+
+    window.print();
+
+}
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* =========================
+   IMAGE ERROR HANDLING
+========================= */
+
+document.querySelectorAll("img").forEach(function(image) {
+
+    image.addEventListener("error", function() {
+
+        if (image.id === "profileImage") {
+
+            image.style.display = "none";
+
+            image.parentElement.style.minHeight = "350px";
+
+        } else {
+
+            image.style.background = "#202938";
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
